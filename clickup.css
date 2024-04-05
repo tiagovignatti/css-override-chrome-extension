@@ -1,0 +1,9 @@
+/** {
+    font-family: serif !important;
+    background-color: #ffff00 !important;
+    color: #ff00ff !important;
+}*/
+
+span.cu-task-row-main__link-text-inner {
+    font-family: "Open Sans" !important;
+}
