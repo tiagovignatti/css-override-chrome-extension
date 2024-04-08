@@ -1,15 +1,11 @@
-/*.a3s {
-	font-family: monospace !important;
-}
-
 .editable {
 	font-family: monospace !important;
+    font-size: large !important;
 	max-width: 78ch;
 	word-wrap: break-word;
-}*/
+}
 
-/*.a3s.aiL .hx {
-    font-family: "Open Sans" !important;
-    background: #ff0000 !important;
-    color: #ff0000;
-}*/
+*.a3s.aiL {
+    font-size: medium !important;
+    font-family: "Lato" !important;
+}
