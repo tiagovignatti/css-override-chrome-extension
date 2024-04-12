@@ -1,8 +1,8 @@
 .editable {
 	font-family: monospace !important;
     font-size: large !important;
-	max-width: 78ch;
-	word-wrap: break-word;
+/*	max-width: 78ch;
+	word-wrap: break-word;*/
 }
 
 *.a3s.aiL {
