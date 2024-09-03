@@ -1,0 +1,5 @@
+.theme-esporte {
+    visibility: hidden;
+    --theme: #06aa48;
+    --theme-hover: #1fb25a
+}

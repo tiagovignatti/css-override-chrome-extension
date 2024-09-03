@@ -2,15 +2,26 @@
     "manifest_version": 3,
     "name": "CSS Override",
     "description": "Customize CSS for certain sites",
-    "version": "1.0",
+    "version": "1.0.0",
+    "background" : {
+        "service_worker": "background.js"
+    },
+
+    "permissions" : ["scripting"],
+
+    "host_permissions": ["<all_urls>"],
     "content_scripts": [
         {
-            "css": [ "gmail.css" ],
-            "matches": [ "https://mail.google.com/*" ]
-        },
+        "matches": ["http://*/*", "https://*/*"],
+        "css": ["content_script.css"],
+        "js": ["content_script.js"],
+        "run_at": "document_end"
+        }
+    ],
+    "web_accessible_resources": [
         {
-            "css": [ "clickup.css" ],
-            "matches": [ "https://app.clickup.com/*" ]
+        "matches": [ "https://*.globo.com/*" ],
+        "resources": [ "content_script.css" ]
         }
     ]
 }
