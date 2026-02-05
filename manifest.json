@@ -2,26 +2,13 @@
     "manifest_version": 3,
     "name": "CSS Override",
     "description": "Customize CSS for certain sites",
-    "version": "1.0.0",
-    "background" : {
-        "service_worker": "background.js"
-    },
-
-    "permissions" : ["scripting"],
-
-    "host_permissions": ["<all_urls>"],
+    "version": "1.0.1",
     "content_scripts": [
         {
-        "matches": ["http://*/*", "https://*/*"],
-        "css": ["content_script.css"],
-        "js": ["content_script.js"],
-        "run_at": "document_end"
-        }
-    ],
-    "web_accessible_resources": [
-        {
-        "matches": [ "https://*.globo.com/*" ],
-        "resources": [ "content_script.css" ]
+            "matches": ["https://*.globo.com/*"],
+            "css": ["content_script.css"],
+            "js": ["content_script.js"],
+            "run_at": "document_end"
         }
     ]
 }
