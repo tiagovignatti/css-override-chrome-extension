@@ -15,7 +15,3 @@ This is a very simple extension that you can customize for your needs.
 * Modify the css file.
 * Reload the extension from `chrome://extensions/`
 
-# Development
-
-### TODO
-- In `chrome://extensions`,  `Error in event handler: TypeError: chrome.tabs.executeScript is not a function at chrome-extension://faedhddajgnmfdlcanjhabhepolkcnce/background.js:2:17`
